@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Créditos</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta charset="UTF-8">  
+    <htc:application
+        ID="App"
+        BORDER="none"
+        BORDERSTYLE="normal"
+        CAPTION="yes"
+        SHOWINTASKBAR="yes"
+        SINGLEINSTANCE="yes"
+        SYSMENU="yes"
+        WINDOWSTATE="normal">
+    </htc:application>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .credits {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            margin-top: -125px; /* Move o container mais para cima */
+        }
+        .credits h1 {
+            font-size: 3em;
+            margin-bottom: 0.2em; /* Ajuste a margem inferior */
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .credits p {
+            font-size: 1.5em;
+            margin: 0.3em 0;
+            letter-spacing: 0.05em;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .credits p.developer {
+            font-size: 1.8em; /* Tamanho intermediário da fonte */
+            font-weight: bold;
+            margin-top: 1em;
+            text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="credits">
+        <h1>Créditos</h1>
+        <p>Desenvolvido por:</p>
+        <p class="developer">Memphis</p>
+        <p>Obrigado por usar o meu aplicativo!</p>
+    </div>
+</body>
+</html>

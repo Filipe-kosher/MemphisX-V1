@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas MemphisX Optimizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: linear-gradient(to bottom right, #311B92, #0D47A1);
+            color: white;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .question {
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+        .answer {
+            display: none;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .credit {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Estilizando links */
+        a {
+            color: #AB47BC; /* Cor roxa */
+            text-decoration: none; /* Remove sublinhado padrão */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <h1>Dúvidas Frequentes</h1>
+    
+    <div class="question" onclick="toggleAnswer(1)">Como faço para garantir a segurança ao usar o MemphisX Pannel Optimizer?</div>
+    <div class="answer" id="answer1">A segurança é nossa prioridade. Nossos otimizadores foram cuidadosamente projetados e testados para garantir que seu sistema operacional seja otimizado de forma segura e eficaz.</div>
+    
+    <div class="question" onclick="toggleAnswer(2)">O MemphisX Pannel Optimizer realmente melhora o desempenho do meu computador?</div>
+    <div class="answer" id="answer2">Sim, em muitos casos, nossos otimizadores podem melhorar significativamente o desempenho do seu computador, incluindo o aumento da taxa de quadros por segundo (FPS) em jogos e aplicativos.</div>
+    
+
+    <div class="credit">
+       <strong>Desenvolvido por Memphis, Seu Dev Favorito.</strong>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById('answer' + id);
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
